@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 export default class Navbar extends Component {
   render() {
     return (
@@ -17,10 +18,13 @@ export default class Navbar extends Component {
               <a href="#">About Us</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <Link to="/course">Course</Link>
             </li>
 
             <div className="loginButton">
+              <Link to="/uploadVideo">
+                <Button>Upload Video</Button>
+              </Link>
               <Button type="primary" icon="user" size="large" shape="circle" />
             </div>
           </ul>
