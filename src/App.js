@@ -6,20 +6,16 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import CourseDescription from "./Pages/CourseDescription";
 import VideoUpload from "./Pages/VideoUpload";
+import Success from "./Pages/Success";
 function App() {
   return (
     <div>
       <Navbar />
       <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route exact path="/course">
-          <CourseDescription />
-        </Route>
-        <Route exact path="/uploadVideo">
-          <VideoUpload />
-        </Route>
+        <Route exact path="/" component={HomePage}></Route>
+        <Route exact path="/course" component={CourseDescription}></Route>
+        <Route exact path="/uploadVideo" component={VideoUpload}></Route>
+        <Route exact path="/uploadVideo/Success" component={Success}></Route>
       </Switch>
       <Footer />
     </div>
