@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import CourseDescription from "./Pages/CourseDescription";
 import VideoUpload from "./Pages/VideoUpload";
 import Success from "./Pages/Success";
+import MyCourses from "./Pages/MyCourses";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/course" component={CourseDescription}></Route>
         <Route exact path="/uploadVideo" component={VideoUpload}></Route>
         <Route exact path="/uploadVideo/Success" component={Success}></Route>
+        <Route exact path="/MyCourses" component={MyCourses}></Route>
       </Switch>
       <Footer />
     </div>

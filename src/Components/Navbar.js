@@ -11,7 +11,7 @@ export default class Navbar extends Component {
               <div className="logo">Logo</div>
             </li>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
 
             <li>
@@ -24,6 +24,9 @@ export default class Navbar extends Component {
             <div className="loginButton">
               <Link to="/uploadVideo">
                 <Button>Upload Video</Button>
+              </Link>
+              <Link to="/MyCourses">
+                <Button>My Courses</Button>
               </Link>
               <Button type="primary" icon="user" size="large" shape="circle" />
             </div>

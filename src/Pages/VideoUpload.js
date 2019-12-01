@@ -22,7 +22,13 @@ export default function VideoUpload() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log({ form });
+    const videoData = new FormData();
+    videoData.append("videoFile", form.file);
+    videoData.append("title", form.title);
+    videoData.append("description", form.description);
+    axios.post("http://localhost:4000/upload", videoData).then(response => {
+      console.log(response.data);
+    });
   }
   return (
     <div
